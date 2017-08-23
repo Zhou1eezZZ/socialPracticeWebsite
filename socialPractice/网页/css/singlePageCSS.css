@@ -53,3 +53,31 @@ a {
 a:active, a:hover {
 	text-decoration:none;
 }
+body{
+	background:#f3f3f3;
+}
+.bodyContent{
+	width:960px;
+	margin:40px auto;
+}
+.briefing{
+	width: 100%;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+    border-radius: 3px;
+    background: #ffffff;
+	padding:10px 10px;
+	box-sizing: border-box;
+}
+.briefing img{
+	width:940px;
+	height:500px;
+	border-radius: 3px;
+}
+.briefing h1{
+	font-size:30px;
+	margin:6px 0;
+}
+.briefing p{
+	font-size:18px;
+	line-height:26px;
+}

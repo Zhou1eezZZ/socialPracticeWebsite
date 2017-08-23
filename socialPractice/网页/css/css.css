@@ -878,6 +878,16 @@ a.nowPage{
 	color:#797777;
 	float:left;
 }
+.sectionWaterQualityDetails ul li a{
+	width:14.28%;
+	height:50px;
+	font-size:14px;
+	line-height:50px;
+	text-align: center;
+	color:#25b462;
+	float:left;
+	text-decoration: underline;
+}
 .sectionWaterQualityDetails ul li span{
 	width:62px;
 	height:30px;
