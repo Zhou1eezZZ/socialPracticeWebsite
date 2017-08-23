@@ -1,0 +1,892 @@
+@charset "utf-8";
+/* CSS Document */
+/**css样式重置代码**/
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img {
+    margin: 0;
+    padding: 0;
+	font-weight:normal;
+	font-size:14px;
+}
+fieldset,img {
+    border: 0;
+}
+img {
+    display: block;
+}
+address,caption,cite,code,dfn,th,var {
+    font-style: normal;
+    font-weight: normal;
+}
+ul,ol {
+    list-style: none;
+}
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "Microsoft YaHei";
+}
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+select,input {
+    vertical-align: middle;
+}
+select,input,textarea {
+    font-size: 12px;
+    margin: 0;
+}
+input[type="text"],input[type="password"],textarea {
+    outline-style: none;
+    -webkit-appearance: none;
+}
+textarea {
+    resize: none;
+}
+table {
+    border-collapse: collapse;
+}
+a {
+	color:#666;
+	text-decoration:none;
+}
+a:active, a:hover {
+	text-decoration:none;
+}
+/**首页样式开始**/
+body{
+	background:#f3f3f3;
+	font-family:"Microsoft YaHei";
+	min-height: 100%;
+}
+html{
+	min-height: 100%;
+	position: relative;
+}
+.head{
+	height:82px;
+	width:100%;
+	background:#ffffff;
+	box-shadow: 0 0 20px #dcdcdc;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:997;
+}
+.headContent{
+	width:960px;
+	height:82px;
+	margin:0 auto;
+}
+.headContent h1{
+	color:#00aeff;
+	font-size:32px;
+	height:82px;
+	line-height:82px;
+	float:left;
+	cursor: default;
+}
+.headContent ul{
+	height:82px;
+	width:500px;
+	float:left;
+}
+.headContent ul li{
+	height:82px;
+	margin-left:48px;
+	float:left;
+	font-size:22px;
+	color:#8590a6;
+	line-height:82px;
+	text-align:center;
+}
+.signIn{
+	width:235px;
+	height:82px;
+	float:right;
+}
+.signIn p{
+	font-size:22px;
+	height:40px;
+	line-height:40px;
+	margin-top:21px;
+	float:right;
+	padding:0 20px;
+	border-radius:3px;
+	cursor:pointer;
+}
+.signInButtonTop{
+	color:#00aeff;
+	border:solid 1px #00aeff;
+	box-sizing:border-box;
+}
+.registerButton{
+	color:#ffffff;
+	background:#00aeff;
+	margin-right:20px;
+}
+.bodyContent{
+	width:960px;
+	margin:0 auto;
+	margin-top:110px;
+	background:#f3f3f3;
+}
+.mainPic{
+	width:960px;
+	height:419px;
+}
+.leftPart{
+	width:660px;
+	height:220px;
+	background:#ffffff;
+	margin-top:10px;
+	box-shadow: 0 1px 3px rgba(0,0,0,.1);
+	border-radius:3px;
+	float:left;
+}
+.dutyPic{
+	margin-top:18px;
+	margin-left:15px;
+	width:200px;
+	height:179px;
+	float:left;
+}
+.leftArrow{
+	width:0; 
+    height:0; 
+    border-top:20px solid transparent;
+    border-bottom:20px solid transparent; 
+    border-right:20px solid #57cdfe;
+	float:left;
+	margin-top:90px;
+	margin-left:5px;
+}
+.duty{
+	float:left;
+	width:404px;
+	height:178px;
+	margin-top:18px;
+	background:#57cdfe;
+	border-radius:3px;
+}
+.duty h1{
+	font-size:24px;
+	color:#ffffff;
+	height:42px;
+	width:384px;
+	border-bottom:solid 1px #f1f1f1;
+	line-height:42px;
+	margin:0 auto;
+}
+.duty p{
+	font-size:18px;
+	padding:5px 10px;
+	line-height:24px;
+	color:#ffffff;
+}
+.notice{
+	width:290px;
+	height:200px;
+	float:left;
+	background:#ffffff;
+	margin-top:10px;
+	margin-left:10px;
+	box-shadow: 0 1px 3px rgba(0,0,0,.1);
+	border-radius:3px;
+}
+.noticeTitle{
+	height:50px;
+	width:100%;
+	border-bottom:solid 1px #e0e0e0;
+}
+.noticeTitle h1{
+	font-size:20px;
+	color:#0d0000;
+	height:50px;
+	line-height:50px;
+	float:left;
+	margin-left:20px;
+}
+.noticeTitle p{
+	float:left;
+	color:#00aeff;
+	font-size:18px;
+	margin-left:40px;
+	height:50px;
+	line-height:50px;
+	cursor:pointer;
+}
+.notice ul{
+	width:100%;
+	padding:10px 20px;
+}
+.notice ul li{
+	font-size:16px;
+	height:32px;
+	width:92%;
+	line-height:32px;
+	text-overflow:ellipsis ;
+	white-space:nowrap;
+	overflow:hidden;
+	cursor:pointer;
+}
+.brief{
+	width:660px;
+	height:270px;
+	background:#ffffff;
+	margin-top:10px;
+	margin-bottom: 70px;
+	box-shadow: 0 1px 3px rgba(0,0,0,.1);
+	border-radius:3px;
+	float:left;
+}
+.brief h1{
+	font-size:24px;
+	width:640px;
+	height:50px;
+	margin-left:10px;
+	border-bottom:solid 1px #f1f1f1;
+	line-height:50px;
+}
+.briefPic{
+	width:199px;
+	height:180px;
+	float:left;
+	margin-top:18px;
+	margin-left:15px;
+}
+.brief p{
+	font-size:18px;
+	float:left;
+	color:#a1a1a1;
+	margin-top:18px;
+	margin-left:42px;
+}
+.download{
+	margin-top:-10px;
+	height:290px;
+}
+.footer{
+	width:100%;
+	height:34px;
+	background:#b5b5b5;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+}
+.footer p{
+	font-size:18px;
+	height:34px;
+	line-height:34px;
+	text-align:center;
+	color:#ffffff;
+}
+a.nav{
+	color:#7a7979;
+}
+a.nav:hover{
+	color:#00aeff;
+}
+.signInterface{
+	height:354px;
+	width:400px;
+	position:fixed;
+	top:50%;
+	left:50%;
+	margin-top:-177px;
+	margin-left:-200px;
+	background:#ffffff;
+	z-index:999;
+	box-shadow: 0 5px 20px 0 rgba(0,34,77,.5);
+}
+.shadow{
+	background-color: rgba(0,0,0,.45);
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:998;
+	width:100%;
+	height:100%;
+}
+.signInterface h1{
+	height:90px;
+	width:100%;
+	line-height:90px;
+	background:#00aeff;
+	color:#ffffff;
+	text-align:center;
+	font-size:32px;
+}
+.inputGroup{
+	height:264px;
+	width:352px;
+	margin-left:24px;
+	margin-top:10px;
+}
+.Input {
+    padding: 0;
+    overflow: hidden;
+    font-size: 14px;
+    background: transparent;
+	font-family: inherit;
+    border: none;
+    outline: none;
+    resize: none;
+	height:48px;
+	line-height:24px;
+	border-bottom: 1px solid #e7eaf1;
+	color:#8590a6;
+	float:left;
+	width:100%;
+	margin-top:10px;
+}
+.noAccount{
+	color:#175199;
+	cursor:pointer;
+	font-size:14px;
+	float:left;
+	height:14px;
+	line-height:14px;
+	margin-top:20px;
+}
+.forgetPassword{
+	color:#8590a6;
+	font-size:14px;
+	cursor:pointer;
+	float:right;
+	height:14px;
+	line-height:14px;
+	margin-top:20px;
+}
+.signInButton{
+	background:#00aeff;
+	font-size:14px;
+	text-align:center;
+	height:34px;
+	width:100%;
+	line-height:34px;
+	color:#ffffff;
+	float:left;
+	margin-top:30px;
+	border-radius:3px;
+	cursor:pointer;
+	border:none;
+}
+.close{
+	width:28px;
+	height:28px;
+	position:fixed;
+	top:50%;
+	left:50%;
+	margin-left:220px;
+	margin-top:-160px;
+	z-index:999;
+	cursor:pointer;
+}
+.floatTop{
+	width:100%;
+	height:100%;
+	position:fixed;
+	z-index:999;
+	top:0;
+	left:0;
+	display:none;
+}
+.reigsterInterface{
+	height:400px;
+}
+.haveAccount{
+	float:right;
+	font-size:14px;
+	color:#9aaabf;
+	height:14px;
+	line-height:14px;
+	margin-top:20px;
+}
+.haveAccount span{
+	color:#00aeff;
+	cursor:pointer;
+}
+.floatTopRegister{
+	width:100%;
+	height:100%;
+	position:fixed;
+	z-index:999;
+	top:0;
+	left:0;
+	display:none;
+}
+a.nowPage{
+	color:#00aeff;
+}
+/**首页样式结束**/
+/**水质标准页样式开始**/
+.standardContent{
+	width:960px;
+	height:100%;
+	margin:0 auto;
+}
+.waterQuality{
+	width:100%;
+	margin-top:110px;
+	box-shadow: 0 1px 3px rgba(0,0,0,.1);
+	border-radius:3px;
+	background:#ffffff;
+	padding:20px 20px;
+	box-sizing:border-box;
+}
+.waterQuality h1{
+	font-size:18px;
+	height:50px;
+	line-height:30px;
+	border-bottom:solid 1px #e1e1e1;
+}
+.waterQuality p{
+	font-size:16px;
+	margin-top:20px;
+	line-height:30px;
+}
+.functionKind{
+	width:100%;
+	margin-top:10px;
+	box-shadow: 0 1px 3px rgba(0,0,0,.1);
+	border-radius:3px;
+	background:#ffffff;
+	padding:20px 20px;
+	box-sizing:border-box;
+}
+.functionKind h1{
+	font-size:18px;
+	height:40px;
+	line-height:30px;
+}
+.functionKind h2{
+	font-size:12px;
+	height:20px;
+	line-height:12px;
+	border-bottom:solid 1px #e1e1e1;
+	color:#2c2c2c;
+
+}
+.functionKind ul{
+	width:100%;
+}
+.functionKind ul li img{
+	width:36px;
+	height:36px;
+	position:absolute;
+	top:22px;
+	left:20px;
+}
+.functionKind ul li{
+	width:100%;
+	height:80px;
+	padding-left:100px;
+	position:relative;
+	box-sizing:border-box;
+}
+.functionKind ul li p{
+	width:100%;
+	font-size:15px;
+	line-height:80px;
+	color:#616161;
+}
+.functionKind h3{
+	padding-top:20px;
+	margin-bottom:10px;
+	font-size:16px;
+	color:#2c2c2c;
+	border-top:solid 1px #e1e1e1;
+	line-height:30px;
+}
+.table1{
+	width:100%;
+	margin-top:10px;
+	box-shadow: 0 1px 3px rgba(0,0,0,.1);
+	border-radius:3px;
+	background:#ffffff;
+	padding:20px 20px;
+	box-sizing:border-box;
+}
+.table1 h3{
+	font-size:18px;
+	height:50px;
+	line-height:30px;
+}
+.table1 ul{
+	width:100%;
+}
+.table1 ul li{
+	width:100%;
+	height:50px;
+}
+.table1 ul li h1{
+	width:16.66%;
+	height:50px;
+	line-height:50px;
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+	float:left;
+	border-right:solid 1px #e1e1e1;
+	box-sizing:border-box;
+	background:rgba(232,232,232,0.4);
+}
+.table1 ul li p{
+	width:16.66%;
+	height:50px;
+	line-height:50px;
+	font-size:12px;
+	text-align:center;
+	float:left;
+	color:#616161;
+}
+.table1FirstLine{
+	border-bottom:solid 1px #e1e1e1;
+	background:rgba(232,232,232,0.4);
+}
+.pdf{
+	font-size:12px;
+}
+.table2{
+	width:100%;
+	margin-top:10px;
+	box-shadow: 0 1px 3px rgba(0,0,0,.1);
+	border-radius:3px;
+	background:#ffffff;
+	padding:20px 20px;
+	box-sizing:border-box;
+	margin-bottom:70px;
+}
+.table2 h1{
+	font-size:18px;
+	height:50px;
+	line-height:30px;
+}
+.table2 ul{
+	width:100%;
+}
+.table2 ul li{
+	width:100%;
+	height:40px;
+}
+.table2 ul li h2{
+	width:20%;
+	height:40px;
+	line-height:40px;
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+	float:left;
+	border-right:solid 1px #e1e1e1;
+	box-sizing:border-box;
+	background:rgba(232,232,232,0.4);
+}
+.table2 ul li h3{
+	width:50%;
+	height:40px;
+	line-height:40px;
+	font-size:12px;
+	text-align:center;
+	float:left;
+	color:#616161;
+}
+.table2 ul li p{
+	width:10%;
+	height:40px;
+	line-height:40px;
+	font-size:12px;
+	text-align:center;
+	float:left;
+	color:#616161;
+}
+.table2FirstLine{
+	border-bottom:solid 1px #e1e1e1;
+	background:rgba(232,232,232,0.4);
+}
+/**水质标准页样式结束**/
+/**河道信息样式开始**/
+.informationContent{
+	width:960px;
+	margin: 0 auto;
+	margin-top:110px;
+}
+.informationHead{
+	width:auto;
+	height:66px;
+}
+.informationHead a{
+	width:440px;
+	height:66px;
+	float:left;
+	box-shadow: 0 1px 3px rgba(0,0,0,.1);
+    border-radius: 3px;
+}
+.informationHead h1{
+	font-size:20px;
+	text-align:center;
+	line-height:66px;
+}
+.informationPage{
+	background:white;
+	color:#737373;
+}
+.informationHead a:last-child{
+	margin-left:80px;
+}
+.nowInformationPage{
+	background:#00aeff;
+	color:white;
+}
+.informationTable{
+	height:152px;
+	width:100%;
+	box-shadow: 0 1px 3px rgba(0,0,0,.1);
+	border-radius: 3px;
+    background: #ffffff;
+	margin-top:28px;
+}
+.informationTable h2{
+	height:122px;
+	width:150px;
+	line-height:122px;
+	font-size:20px;
+	text-align:center;
+	color:#797777;
+	border-right:solid 1px #e1e1e1;
+	float:left;
+	margin-top:15px;
+}
+.informationTable ul{
+	width:790px;
+	height:90px;
+	float:left;
+	margin-left:10px;
+	border-bottom:solid 1px #e1e1e1;
+}
+.informationTable ul li{
+	width:100%;
+	height:45px;
+}
+.informationTable ul li p{
+	float:left;
+	font-size:18px;
+	color:#797777;
+	width:112px;
+	height:18px;
+	line-height:18px;
+	text-align:center;
+	cursor:pointer;
+}
+.informationTable ul li p span{
+	color:#00aeff;
+}
+.informationTable ul li:first-child{
+	border-bottom:dashed 1px #e1e1e1;
+}
+.informationTable ul li:first-child p{
+	margin-top:17px;
+}
+.informationTable ul li:last-child p{
+	margin-top:12px;
+}
+.tableSearch{
+	float:left;
+	height:60px;
+}
+.tableSearchText{
+	width:240px;
+	height:38px;
+	float:left;
+	margin-top:6px;
+	margin-left:10px;
+	border-style:none;
+	border-radius: 3px;
+	background:#f3f3f3;
+	padding-left:30px;
+	box-sizing: border-box;
+	font-size:18px;
+}
+.tableSearchSubmit{
+	float:left;
+	background:#00aeff;
+	width:100px;
+	height:38px;
+	margin-top:6px;
+	color:white;
+	border-radius:3px;
+	line-height:38px;
+	text-align:center;
+	font-size:18px;
+	margin-left:40px;
+	cursor: pointer;
+	border:none;
+}
+.informationStantard{
+	float:left;
+	height:60px;
+}
+.informationStantard span{
+	float: right;
+    width: 62px;
+    height: 30px;
+	margin-top:10px;
+}
+.informationDetailsAll{
+	display: block;
+}
+.informationDetails1,.informationDetails2,.informationDetails3,.informationDetails4,
+.informationDetails5,.informationDetails6,.informationDetails7,.informationDetails8,
+.informationDetails9,.informationDetails10,.informationDetails11,.informationDetails12{
+	display: none;
+}
+.span_6{
+	background: url(../images/sort6.png) no-repeat 13px -3px #ff5605;
+}
+.span_5{
+	background: url(../images/sort5.png) no-repeat 13px -3px #ffc20d;
+}
+.span_4{
+	background: url(../images/sort4.png) no-repeat 13px -3px #24B462;
+}
+.span_3{
+	background: url(../images/sort3.png) no-repeat 13px -3px #5ED522;
+}
+.span_2{
+	background: url(../images/sort2.png) no-repeat 13px -3px #19acf2;
+}
+.span_1{
+	background: url(../images/sort1.png) no-repeat 13px -3px #59D6FF;
+	margin-left:38px;
+}
+.informationDetails{
+	width:100%;
+	box-shadow: 0 1px 3px rgba(0,0,0,.1);
+	border-radius: 3px;
+    background: #ffffff;
+	margin-top:28px;
+	margin-bottom: 70px;
+	box-sizing: border-box;
+}
+.informationDetailsTitle{
+	height:42px;
+	width:100%;
+	background:#00aeff;
+}
+.informationDetailsTitle p{
+	width:14.28%;
+	height:42px;
+	line-height:42px;
+	font-size:18px;
+	text-align:center;
+	color:white;
+	float:left;
+}
+.informationDetails ul{
+	width:100%;
+}
+.informationDetails ul li{
+	width:100%;
+	height:42px;
+	border-bottom:solid 1px #e1e1e1;
+}
+.informationDetails ul li p{
+	width:14.28%;
+	height:42px;
+	line-height:42px;
+	font-size:18px;
+	color:#797777;
+	text-align:center;
+	float:left;
+}
+.informationDetails ul li a{
+	width:14.28%;
+	height:42px;
+	line-height:42px;
+	font-size:18px;
+	color:#25b462;
+	text-align:center;
+	float:left;
+	text-decoration: underline;
+}
+.informationDetails ul li span{
+	float: left;
+    width: 62px;
+    height: 30px;
+    margin-top: 7px;
+	margin-left:40px;
+}
+/**河道信息样式结束**/
+/**断面水质样式开始**/
+.BCofSectionWater{
+	margin-top:130px;
+}
+.bodyContent h6{
+	width:100%;
+	height:60px;
+	background:#00aeff;
+	color:white;
+	text-align:center;
+	line-height:60px;
+	border-radius: 3px;
+	font-size:20px;
+	box-shadow: 0 1px 3px rgba(0,0,0,.1);
+}
+.standardWaterQuality{
+	float:right;
+	height:40px;
+	margin-top:10px;
+}
+.sectionWaterQualityDetails{
+	width: 100%;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+    border-radius: 3px;
+    background: #ffffff;
+    margin-top: 72px;
+    margin-bottom: 70px;
+    box-sizing: border-box;
+}
+.SWQDtitle{
+	width:100%;
+	height:50px;
+	background:#e8e8e8;
+}
+.SWQDtitle h1{
+	float:left;
+	width:14.28%;
+	height:50px;
+	font-size:14px;
+	color:black;
+	line-height:50px;
+	text-align:center;
+}
+.sectionWaterQualityDetails ul{
+	width:100%;
+}
+.sectionWaterQualityDetails ul li{
+	width:100%;
+	height:50px;
+	border-bottom: solid 1px #e1e1e1;
+}
+.sectionWaterQualityDetails ul li p{
+	width:14.28%;
+	height:50px;
+	font-size:14px;
+	line-height:50px;
+	text-align: center;
+	color:#797777;
+	float:left;
+}
+.sectionWaterQualityDetails ul li span{
+	width:62px;
+	height:30px;
+	margin-top:10px;
+	margin-left:36px;
+	margin-right:38px;
+	float:left;
+}
+.resetSpan1{
+	margin-left: 0;
+}
+/**断面水质样式结束**/

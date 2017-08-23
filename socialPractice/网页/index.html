@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>桐乡市河道水质</title>
+<link href="css/css.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/clickEvent.js" charset="utf-8"></script>
+</head>
+
+<body>
+	<div class="head">
+        <div class="headContent">
+        	<h1>桐乡市河道水质</h1>
+            <ul>
+                <li><a class="nav nowPage" href="index.html">首页</a></li>
+                <li><a class="nav" href="riverInformation.html">河道信息</a></li>
+                <li><a class="nav" href="sectionWaterQuality.html">断面水质</a></li>
+                <li><a class="nav" href="standard.html">水质标准</a></li>
+            </ul>
+            <div class="signIn">
+                <p onClick="showSignInWindow()" class="signInButtonTop">登录</p>
+                <p onClick="showRegisterWindow()" class="registerButton">注册</p>
+            </div>
+        </div>
+    </div>
+    <div class="bodyContent">
+    	<img class="mainPic" src="images/mainPic.png" />
+        <div class="leftPart">
+        	<img class="dutyPic" src="images/dutyPic.png" />
+            <div class="leftArrow"></div>
+            <div class="duty">
+            	<h1>河长职责</h1>
+                <p>各级河长负责牵头组织开展包干河道水质和污染现状调查，制定水环境治理实施方案。</p>
+            </div>
+        </div>
+        <div class="notice">
+        	<div class="noticeTitle">
+            	<h1>最新公告</h1>
+            	<p>更多</p>
+            </div>
+            <ul>
+            	<li>[桐乡市]中办国办印发《关于全面推行河长制的意见》 2018年底前全面建立河长制</li>
+                <li>[桐乡市]《关于开展2016年度首批优秀“基层河长”评选活动的通知》</li>
+                <li>[桐乡市]2016年度首批优秀基层河长(警长) 拟通报表彰名单公示</li>
+                <li>[桐乡市]关于征集“治水小故事”的通知</li>
+            </ul>
+        </div>
+        <div class="brief">
+        	<h1>网站简介</h1>
+            <img class="briefPic" src="images/briefPic.png" />
+            <p>本网站供桐乡市治水办公室内部使用</p>
+        </div>
+        <div class="notice download">
+        	<div class="noticeTitle">
+            	<h1>文件下载</h1>
+            	<p>更多</p>
+            </div>
+            <ul>
+            	<li>学唱大禹纪念歌，传承大禹治水精神，持续推进五水共治工作，力争“大禹杯”。</li>
+                <li>关于落实“河长制”工作的通知</li>
+                <li>关于明确“河长制”督查工作具体要求的通知</li>
+            	<li>[桐乡市]中办国办印发《关于全面推行河长制的意见》 2018年底前全面建立河长制</li>
+                <li>[桐乡市]《关于开展2016年度首批优秀“基层河长”评选活动的通知》</li>
+                <li>[桐乡市]2016年度首批优秀基层河长(警长) 拟通报表彰名单公示</li>
+                <li>[桐乡市]关于征集“治水小故事”的通知</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+    	<p>桐乡市治水办公室 版权所有</p>
+    </div>
+    <form name="sign">
+    	<div id="floatTop" class="floatTop">
+			<div class="shadow"></div>
+			<img id="closeButton" onClick="closeWindow()" class="close" src="images/close.png" />
+			<div class="signInterface">
+				<h1>用户登录</h1>
+				<div class="inputGroup">
+					<input type="text" value="" name="username" class="Input" placeholder="手机号或邮箱">
+					<input type="password" value="" name="password" class="Input" placeholder="密码">
+					<p onClick="signInRegister()" id="signInRegister" class="noAccount">没有账号，点击注册</p>
+					<p class="forgetPassword">忘记密码？</p>
+					<input type="submit" value="登录" class="signInButton" />
+				</div>
+			</div>
+		</div>
+	</form>
+	<form name="register">
+		<div id="floatTopRegister" class="floatTopRegister">
+			<div class="shadow"></div>
+			<img id="closeButtonImg" onClick="closeWindow()" class="close" src="images/close.png" />
+			<div class="signInterface reigsterInterface">
+				<h1>用户注册</h1>
+				<div class="inputGroup">
+					<input type="text" value="" name="username" class="Input" placeholder="手机号">
+					<input type="password" value="" name="password" class="Input" placeholder="密码">
+					<input type="text" value="" name="name" class="Input" placeholder="姓名">
+					<input type="submit" value="注册" class="signInButton" />
+					<p class="haveAccount">已有账号？<span onClick="registerSignIn()" id="registerSignIn">登录</span></p>
+				</div>
+			</div>
+		</div>
+    </form>
+</body>
+</html>

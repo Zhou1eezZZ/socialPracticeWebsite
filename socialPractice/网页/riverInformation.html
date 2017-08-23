@@ -1,0 +1,553 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>桐乡市河道水质</title>
+<link href="css/css.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/clickEvent.js" charset="utf-8"></script>
+</head>
+
+<body>
+	<div class="head">
+        <div class="headContent">
+        	<h1>桐乡市河道水质</h1>
+            <ul>
+                <li><a class="nav" href="index.html">首页</a></li>
+                <li><a class="nav nowPage" href="riverInformation.html">河道信息</a></li>
+                <li><a class="nav" href="sectionWaterQuality.html">断面水质</a></li>
+                <li><a class="nav" href="standard.html">水质标准</a></li>
+            </ul>
+            <div class="signIn">
+                <p onClick="showSignInWindow()" class="signInButtonTop">登录</p>
+                <p onClick="showRegisterWindow()" class="registerButton">注册</p>
+            </div>
+        </div>
+    </div>
+    <div class="informationContent">
+    	<div class="informationHead">
+			<a href="riverInformation.html" class="informationPage nowInformationPage"><h1>河道信息数据</h1></a>
+    		<a href="informationMap.html" class="informationPage"><h1>河道信息地图</h1></a>
+    	</div>
+    	<div class="informationTable">
+    		<h2>行政区域</h2>
+    		<ul>
+    			<li>
+    				<p><span id="AAll" onClick="searchInformationAll()">全部</span></p>
+    				<p id="A1" onClick="searchInformation1()">乌镇</p>
+    				<p id="A2" onClick="searchInformation2()">濮院镇</p>
+    				<p id="A3" onClick="searchInformation3()">屠甸镇</p>
+    				<p id="A4" onClick="searchInformation4()">石门镇</p>
+    				<p id="A5" onClick="searchInformation5()">河山镇</p>
+    				<p id="A6" onClick="searchInformation6()">洲泉镇</p>
+    			</li>
+    			<li>
+    				<p id="A7" onClick="searchInformation7()">大麻镇</p>
+    				<p id="A8" onClick="searchInformation8()">崇福镇</p>
+    				<p id="A9" onClick="searchInformation9()">高桥镇</p>
+    				<p id="A10" onClick="searchInformation10()">梧桐街道</p>
+    				<p id="A11" onClick="searchInformation11()">凤鸣街道</p>
+    				<p id="A12" onClick="searchInformation12()">龙翔街道</p>
+    			</li>
+    		</ul>
+    		<div class="tableSearch">
+    			<input type="text" placeholder="根据河道名称搜索河道" class="tableSearchText" />
+    			<input type="submit" value="查询" class="tableSearchSubmit" />
+    		</div>	
+    		<div class="informationStantard">
+    			<span class="span_6"></span>
+    			<span class="span_5"></span>
+    			<span class="span_4"></span>
+    			<span class="span_3"></span>
+    			<span class="span_2"></span>
+    			<span class="span_1"></span>
+			</div>
+    	</div>
+    	<div class="informationDetails">
+    		<div class="informationDetailsTitle">
+    			<p>河道编号</p>
+    			<p>河道名称</p>
+    			<p>区域</p>
+    			<p>行政村</p>
+    			<p>河道长度(公里)</p>
+    			<p>河道负责人</p>
+    			<p>水质类别</p>
+    		</div>
+    		<ul class="informationDetailsAll" id="DAll">
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_6"></span>
+    			</li>
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_5"></span>
+    			</li>
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_4"></span>
+    			</li>
+    			<li>
+    				<p>TXHD0001</p>
+					<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_3"></span>
+    			</li>
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_2"></span>
+    			</li>
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_1"></span>
+    			</li>
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_3"></span>
+    			</li>
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_2"></span>
+    			</li>
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_6"></span>
+    			</li>
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_5"></span>
+    			</li>
+    		</ul>
+    		<ul class="informationDetails1" id="D1">
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_4"></span>
+    			</li>
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_3"></span>
+    			</li>
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_2"></span>
+    			</li>
+    		</ul>
+    		<ul class="informationDetails2" id="D2">
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_5"></span>
+    			</li>
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_1"></span>
+    			</li>
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_4"></span>
+    			</li>
+    		</ul>
+    		<ul class="informationDetails3" id="D3">
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_6"></span>
+    			</li>
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_3"></span>
+    			</li>
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_5"></span>
+    			</li>
+    		</ul>
+    		<ul class="informationDetails4" id="D4">
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_4"></span>
+    			</li>
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_3"></span>
+    			</li>
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_2"></span>
+    			</li>
+    		</ul>
+    		<ul class="informationDetails5" id="D5">
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_2"></span>
+    			</li>
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_1"></span>
+    			</li>
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_4"></span>
+    			</li>
+    		</ul>
+    		<ul class="informationDetails6" id="D6">
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_4"></span>
+    			</li>
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_3"></span>
+    			</li>
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_2"></span>
+    			</li>
+    		</ul>
+    		<ul class="informationDetails7" id="D7">
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_6"></span>
+    			</li>
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_3"></span>
+    			</li>
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_5"></span>
+    			</li>
+    		</ul>
+    		<ul class="informationDetails8" id="D8">
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_4"></span>
+    			</li>
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_3"></span>
+    			</li>
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_2"></span>
+    			</li>
+    		</ul>
+    		<ul class="informationDetails9" id="D9">
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_1"></span>
+    			</li>
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_2"></span>
+    			</li>
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_2"></span>
+    			</li>
+    		</ul>
+    		<ul class="informationDetails10" id="D10">
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_4"></span>
+    			</li>
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_5"></span>
+    			</li>
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_1"></span>
+    			</li>
+    		</ul>
+    		<ul class="informationDetails11" id="D11">
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_4"></span>
+    			</li>
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_3"></span>
+    			</li>
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_2"></span>
+    			</li>
+    		</ul>
+    		<ul class="informationDetails12" id="D12">
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_4"></span>
+    			</li>
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_3"></span>
+    			</li>
+    			<li>
+    				<p>TXHD0001</p>
+    				<a href="singlePage/singlePage_DTH.html" target="_blank">荡田河</a>
+    				<p>梧桐街道</p>
+    				<p>安乐梧桐</p>
+    				<p>20</p>
+    				<p>吴伟杰</p>
+    				<span class="span_2"></span>
+    			</li>
+    		</ul>
+    	</div>
+    </div>
+    <div class="footer">
+    	<p>桐乡市治水办公室 版权所有</p>
+    </div>
+    <form name="sign">
+    	<div id="floatTop" class="floatTop">
+			<div class="shadow"></div>
+			<img id="closeButton" onClick="closeWindow()" class="close" src="images/close.png" />
+			<div class="signInterface">
+				<h1>用户登录</h1>
+				<div class="inputGroup">
+					<input type="text" value="" name="username" class="Input" placeholder="手机号或邮箱">
+					<input type="password" value="" name="password" class="Input" placeholder="密码">
+					<p onClick="signInRegister()" id="signInRegister" class="noAccount">没有账号，点击注册</p>
+					<p class="forgetPassword">忘记密码？</p>
+					<input type="submit" value="登录" class="signInButton" />
+				</div>
+			</div>
+		</div>
+	</form>
+	<form name="register">
+		<div id="floatTopRegister" class="floatTopRegister">
+			<div class="shadow"></div>
+			<img id="closeButtonImg" onClick="closeWindow()" class="close" src="images/close.png" />
+			<div class="signInterface reigsterInterface">
+				<h1>用户注册</h1>
+				<div class="inputGroup">
+					<input type="text" value="" name="username" class="Input" placeholder="手机号">
+					<input type="password" value="" name="password" class="Input" placeholder="密码">
+					<input type="text" value="" name="name" class="Input" placeholder="姓名">
+					<input type="submit" value="注册" class="signInButton" />
+					<p class="haveAccount">已有账号？<span onClick="registerSignIn()" id="registerSignIn">登录</span></p>
+				</div>
+			</div>
+		</div>
+    </form>
+</body>
+</html>
