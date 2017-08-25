@@ -83,5 +83,79 @@
 			</ul>
 		</div>
 	</div>
+	<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+	<div style="overflow: hidden;background-color:white;width:960px;margin:0 auto;box-shadow: 0 1px 3px rgba(0,0,0,.1);border-radius: 3px;">
+		<div id="main" style="box-sizing:border-box;box-shadow: 0 1px 3px rgba(0,0,0,.1);border-radius: 3px;padding: 10px 10px;height:400px;width:960px;margin:0 auto;"></div>
+	</div>
+	<!-- ECharts单文件引入 -->
+	<script src="../js/echarts.min.js"></script>
+	<script type="text/javascript">
+		// 基于准备好的dom，初始化echarts图表
+		var myChart = echarts.init(document.getElementById("main"));
+		var option = {
+			title : {
+				text: '义桥水质分析图',
+			},
+			tooltip : {
+				trigger: 'axis'
+			},
+			legend: {
+				data:['溶解氧','高锰酸盐指数','氨氮','总磷']
+			},
+			//右上角工具条
+			toolbox: {
+				show : true,
+				feature : {
+					mark : {show: true},
+					dataView : {show: true, readOnly: false},
+					magicType : {show: true, type: ['line', 'bar']},
+					restore : {show: true},
+					saveAsImage : {show: true}
+				}
+			},
+			calculable : true,
+			xAxis : [
+				{
+					type : 'category',
+					boundaryGap : false,
+					data : ['2017-06-17','2017-06-24','2017-06-30','2017-07-04','2017-07-12','2017-07-18','2017-07-24']
+				}
+			],
+			yAxis : [
+				{
+					type : 'value',
+					axisLabel : {
+						formatter: '{value} mg/L'
+					}
+				}
+			],
+			series : [
+				{
+					name:'溶解氧',
+					type:'line',
+					data:[-1.000, 6.130, -1.000, 8.680, 8.580, 7.420, 11.930],
+				},
+				{
+					name:'高锰酸盐指数',
+					type:'line',
+					data:[2.300, 1.900, -1.000 , 2.500, 2.900 , 3.200, 2.900],
+				},
+				{
+					name:'氨氮',
+					type:'line',
+					data:[-1.000, 0.210, -1.000, 0.140 , 0.100, 0.040, 0.380],
+				},
+				{
+					name:'总磷',
+					type:'line',
+					data:[-1.000, 0.138, -1.000, 0.044, 0.245, 0.079, 0.046],
+				}
+			]
+		};
+
+		// 为echarts对象加载数据
+		myChart.setOption(option);
+
+	</script>
 </body>
 </html>
