@@ -27,58 +27,58 @@
 				<li>
 					<span class="span_2"></span>
    					<p id="date1">2017-06-17</p>
-   					<p>-1.000</p>
-   					<p>2.300 / II类</p>
-   					<p>-1.000 / I类</p>
-   					<p>-1.000 / I类</p>
+   					<p id="RJY1">-1.000</p>
+   					<p id="GMSJ1">2.300</p>
+   					<p id="AD1">-1.000</p>
+   					<p id="ZL1">-1.000</p>
 				</li>
 				<li>
 					<span class="span_3"></span>
    					<p id="date2">2017-06-24</p>
-   					<p>6.130 / II类</p>
-   					<p>1.900 / I类</p>
-   					<p>0.210 / II类</p>
-					<p>0.138 / III类</p>
+   					<p id="RJY2">6.130</p>
+   					<p id="GMSJ2">1.900</p>
+   					<p id="AD2">0.210</p>
+					<p id="ZL2">0.138</p>
 				</li>
 				<li>
    					<span class="span_1 resetSpan1"></span>
    					<p id="date3">2017-06-30</p>
-   					<p>-1.000</p>
-   					<p>-1.000 / I类</p>
-   					<p>-1.000 / I类</p>
-					<p>-1.000 / I类</p>
+   					<p id="RJY3">-1.000</p>
+   					<p id="GMSJ3">-1.000</p>
+   					<p  id="AD3">-1.000</p>
+					<p id="ZL3">-1.000</p>
    				</li>
    				<li>
    					<span class="span_2"></span>
    					<p id="date4">2017-07-04</p>
-   					<p>8.680 / I类</p>
-   					<p>2.500 / II类</p>
-   					<p>0.140 / I类</p>
-   					<p>0.044 / II类</p>
+   					<p id="RJY4">8.680</p>
+   					<p id="GMSJ4">2.500</p>
+   					<p  id="AD4">0.140</p>
+   					<p id="ZL4">0.044</p>
    				</li>
    				<li>
    					<span class="span_4"></span>
    					<p id="date5">2017-07-12</p>
-   					<p>8.580 / I类</p>
-   					<p>2.900 / II类</p>
-   					<p>0.100 / I类</p>
-   					<p>0.245 / IV类</p>
+   					<p id="RJY5">8.580</p>
+   					<p id="GMSJ5">2.900</p>
+   					<p id="AD5">0.100</p>
+   					<p id="ZL5">0.245</p>
    				</li>
    				<li>
    					<span class="span_2"></span>
    					<p id="date6">2017-07-18</p>
-   					<p>7.420 / II类</p>
-   					<p>3.200 / II类</p>
-   					<p>0.040 / I类</p>
-   					<p>0.079 / II类</p>
+   					<p id="RJY6">7.420</p>
+   					<p id="GMSJ6">3.200</p>
+   					<p id="AD6">0.040</p>
+   					<p id="ZL6">0.079</p>
    				</li>
    				<li>
    					<span class="span_2"></span>
    					<p id="date7">2017-07-24</p>
-   					<p>11.930 / I类</p>
-   					<p>2.900 / II类</p>
-   					<p>0.380 / II类</p>
-   					<p>0.046 / II类</p>
+   					<p id="RJY7">11.930</p>
+   					<p id="GMSJ7">2.900</p>
+   					<p id="AD7">0.380</p>
+   					<p id="ZL7">0.046</p>
    				</li>
 			</ul>
 		</div>
@@ -98,11 +98,39 @@
 		var date5 = document.getElementById("date5").innerHTML;
 		var date6 = document.getElementById("date6").innerHTML;
 		var date7 = document.getElementById("date7").innerHTML;
+		var RJY1 = document.getElementById("RJY1").innerHTML;
+		var RJY2 = document.getElementById("RJY2").innerHTML;
+		var RJY3 = document.getElementById("RJY3").innerHTML;
+		var RJY4 = document.getElementById("RJY4").innerHTML;
+		var RJY5 = document.getElementById("RJY5").innerHTML;
+		var RJY6 = document.getElementById("RJY6").innerHTML;
+		var RJY7 = document.getElementById("RJY7").innerHTML;
+		var GMSJ1 = document.getElementById("GMSJ1").innerHTML;
+		var GMSJ2 = document.getElementById("GMSJ2").innerHTML;
+		var GMSJ3 = document.getElementById("GMSJ3").innerHTML;
+		var GMSJ4 = document.getElementById("GMSJ4").innerHTML;
+		var GMSJ5 = document.getElementById("GMSJ5").innerHTML;
+		var GMSJ6 = document.getElementById("GMSJ6").innerHTML;
+		var GMSJ7 = document.getElementById("GMSJ7").innerHTML;
+		var AD1 = document.getElementById("AD1").innerHTML;
+		var AD2 = document.getElementById("AD2").innerHTML;
+		var AD3 = document.getElementById("AD3").innerHTML;
+		var AD4 = document.getElementById("AD4").innerHTML;
+		var AD5 = document.getElementById("AD5").innerHTML;
+		var AD6 = document.getElementById("AD6").innerHTML;
+		var AD7 = document.getElementById("AD7").innerHTML;
+		var ZL1 = document.getElementById("ZL1").innerHTML;
+		var ZL2 = document.getElementById("ZL2").innerHTML;
+		var ZL3 = document.getElementById("ZL3").innerHTML;
+		var ZL4 = document.getElementById("ZL4").innerHTML;
+		var ZL5 = document.getElementById("ZL5").innerHTML;
+		var ZL6 = document.getElementById("ZL6").innerHTML;
+		var ZL7 = document.getElementById("ZL7").innerHTML;
 		// 基于准备好的dom，初始化echarts图表
 		var myChart = echarts.init(document.getElementById("main"));
 		var option = {
 			title : {
-				text: '义桥水质分析图',
+				text: '水质分析图',
 			},
 			tooltip : {
 				trigger: 'axis'
@@ -141,22 +169,22 @@
 				{
 					name:'溶解氧',
 					type:'line',
-					data:[-1.000, 6.130, -1.000, 8.680, 8.580, 7.420, 11.930],
+					data:[RJY1,RJY2,RJY3,RJY4,RJY5,RJY6,RJY7],
 				},
 				{
 					name:'高锰酸盐指数',
 					type:'line',
-					data:[2.300, 1.900, -1.000 , 2.500, 2.900 , 3.200, 2.900],
+					data:[GMSJ1,GMSJ2,GMSJ3,GMSJ4,GMSJ5,GMSJ6,GMSJ7],
 				},
 				{
 					name:'氨氮',
 					type:'line',
-					data:[-1.000, 0.210, -1.000, 0.140 , 0.100, 0.040, 0.380],
+					data:[AD1,AD2,AD3,AD4,AD5,AD6,AD7],
 				},
 				{
 					name:'总磷',
 					type:'line',
-					data:[-1.000, 0.138, -1.000, 0.044, 0.245, 0.079, 0.046],
+					data:[ZL1,ZL2,ZL3,ZL4,ZL5,ZL6,ZL7],
 				}
 			]
 		};
