@@ -8,14 +8,14 @@
 </head>
 
 <body>
-	<div class="bodyContentOfYQ">
+	<div class="bodyContentOfSinglePage">
 		<div class="briefing">
 			<img src="../images/YQ.jpg" />
 			<h1>义桥</h1>
 			<p>	义桥镇位于杭州市萧山区钱塘江与浦阳江、富春江三江汇合处，是一个闻名遐迩的历史古镇。北濒富春江与杭州市西湖区隔江相望，东与闻堰镇、蜀山街道、临浦镇接壤，南与戴村镇为邻，西依云峰山与富阳市相连，为三市区交界之地。镇区距杭州市中心、萧山区中心各为15公里，距杭州萧山国际机场20公里，杭州绕城南线、钱江五桥横穿全镇并设有互通立交，交通便捷。</p>
 		</div>
-		<div class="dataOfYQ">
-			<div class="titleOfYQ">
+		<div class="dataOfSinglePage">
+			<div class="titleOfSinglePage">
 				<h1>水质类别</h1>
    				<h1>更新时间</h1>
    				<h1>溶解氧(mg/L)</h1>
@@ -26,7 +26,7 @@
 			<ul>
 				<li>
 					<span class="span_2"></span>
-   					<p>2017-06-17</p>
+   					<p id="date1">2017-06-17</p>
    					<p>-1.000</p>
    					<p>2.300 / II类</p>
    					<p>-1.000 / I类</p>
@@ -34,7 +34,7 @@
 				</li>
 				<li>
 					<span class="span_3"></span>
-   					<p>2017-07-06</p>
+   					<p id="date2">2017-06-24</p>
    					<p>6.130 / II类</p>
    					<p>1.900 / I类</p>
    					<p>0.210 / II类</p>
@@ -42,7 +42,7 @@
 				</li>
 				<li>
    					<span class="span_1 resetSpan1"></span>
-   					<p>2017-07-04</p>
+   					<p id="date3">2017-06-30</p>
    					<p>-1.000</p>
    					<p>-1.000 / I类</p>
    					<p>-1.000 / I类</p>
@@ -50,7 +50,7 @@
    				</li>
    				<li>
    					<span class="span_2"></span>
-   					<p>2017-07-06</p>
+   					<p id="date4">2017-07-04</p>
    					<p>8.680 / I类</p>
    					<p>2.500 / II类</p>
    					<p>0.140 / I类</p>
@@ -58,7 +58,7 @@
    				</li>
    				<li>
    					<span class="span_4"></span>
-   					<p>2017-06-24</p>
+   					<p id="date5">2017-07-12</p>
    					<p>8.580 / I类</p>
    					<p>2.900 / II类</p>
    					<p>0.100 / I类</p>
@@ -66,7 +66,7 @@
    				</li>
    				<li>
    					<span class="span_2"></span>
-   					<p>2017-07-06</p>
+   					<p id="date6">2017-07-18</p>
    					<p>7.420 / II类</p>
    					<p>3.200 / II类</p>
    					<p>0.040 / I类</p>
@@ -74,7 +74,7 @@
    				</li>
    				<li>
    					<span class="span_2"></span>
-   					<p>2017-07-06</p>
+   					<p id="date7">2017-07-24</p>
    					<p>11.930 / I类</p>
    					<p>2.900 / II类</p>
    					<p>0.380 / II类</p>
@@ -90,6 +90,14 @@
 	<!-- ECharts单文件引入 -->
 	<script src="../js/echarts.min.js"></script>
 	<script type="text/javascript">
+		// 获取数据
+		var date1 = document.getElementById("date1").innerHTML;
+		var date2 = document.getElementById("date2").innerHTML;
+		var date3 = document.getElementById("date3").innerHTML;
+		var date4 = document.getElementById("date4").innerHTML;
+		var date5 = document.getElementById("date5").innerHTML;
+		var date6 = document.getElementById("date6").innerHTML;
+		var date7 = document.getElementById("date7").innerHTML;
 		// 基于准备好的dom，初始化echarts图表
 		var myChart = echarts.init(document.getElementById("main"));
 		var option = {
@@ -118,7 +126,7 @@
 				{
 					type : 'category',
 					boundaryGap : false,
-					data : ['2017-06-17','2017-06-24','2017-06-30','2017-07-04','2017-07-12','2017-07-18','2017-07-24']
+					data : [date1,date2,date3,date4,date5,date6,date7]
 				}
 			],
 			yAxis : [
@@ -152,7 +160,6 @@
 				}
 			]
 		};
-
 		// 为echarts对象加载数据
 		myChart.setOption(option);
 

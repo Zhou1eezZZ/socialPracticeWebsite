@@ -56,7 +56,7 @@ a:active, a:hover {
 body{
 	background:#f3f3f3;
 }
-.bodyContentOfYQ{
+.bodyContentOfSinglePage{
 	width:960px;
 	margin:20px auto;
 }
@@ -68,6 +68,9 @@ body{
 	padding:10px 10px;
 	box-sizing: border-box;
 }
+.riverBriefing{
+	height:140px;
+}
 .briefing img{
 	width:940px;
 	height:500px;
@@ -77,11 +80,21 @@ body{
 	font-size:30px;
 	margin:6px 0;
 }
+.briefing h2{
+	font-size:18px;
+	line-height:26px;
+	width:30%;
+	height:26px;
+	float:left;
+}
 .briefing p{
 	font-size:18px;
 	line-height:26px;
 }
-.dataOfYQ{
+.briefing h2 span{
+	font-weight: bold;
+}
+.dataOfSinglePage{
 	width: 100%;
     box-shadow: 0 1px 3px rgba(0,0,0,.1);
     border-radius: 3px;
@@ -89,12 +102,12 @@ body{
     margin: 20px 0;
     box-sizing: border-box;
 }
-.titleOfYQ{
+.titleOfSinglePage{
 	width: 100%;
     height: 50px;
     background: #00aeff;
 }
-.titleOfYQ h1{
+.titleOfSinglePage h1{
 	float: left;
     width: 16.66%;
     height: 50px;
@@ -103,15 +116,15 @@ body{
     line-height: 50px;
     text-align: center;
 }
-.dataOfYQ ul{
+.dataOfSinglePage ul{
 	width:100%;
 }
-.dataOfYQ ul li{
+.dataOfSinglePage ul li{
 	width: 100%;
     height: 50px;
     border-bottom: solid 1px #e1e1e1;
 }
-.dataOfYQ ul li p{
+.dataOfSinglePage ul li p{
 	width: 16.66%;
     height: 50px;
     font-size: 14px;
@@ -120,7 +133,7 @@ body{
     color: #797777;
     float: left;
 }
-.dataOfYQ ul li span{
+.dataOfSinglePage ul li span{
 	width: 62px;
     height: 30px;
     margin-top: 10px;
