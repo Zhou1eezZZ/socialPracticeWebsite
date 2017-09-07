@@ -230,6 +230,9 @@ html{
 	overflow:hidden;
 	cursor:pointer;
 }
+.notice ul li a{
+	color:#000000;
+}
 .brief{
 	width:660px;
 	height:270px;
