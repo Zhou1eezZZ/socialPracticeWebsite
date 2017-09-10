@@ -26,7 +26,6 @@ function signInRegister(){
 	float1.style.display = "none"
 }
 function getId(){
-	var DAll = document.getElementById("DAll");
 	var D1 = document.getElementById("D1");
 	var D2 = document.getElementById("D2");
 	var D3 = document.getElementById("D3");
@@ -39,7 +38,6 @@ function getId(){
 	var D10 = document.getElementById("D10");
 	var D11 = document.getElementById("D11");
 	var D12 = document.getElementById("D12");
-	var AAll = document.getElementById("AAll");
 	var A1 = document.getElementById("A1");
 	var A2 = document.getElementById("A2");
 	var A3 = document.getElementById("A3");
@@ -54,7 +52,6 @@ function getId(){
 	var A12 = document.getElementById("A12");
 }
 function resetDisplay(){
-	DAll.style.display = "none";
 	D1.style.display = "none";
 	D2.style.display = "none";
 	D3.style.display = "none";
@@ -69,7 +66,6 @@ function resetDisplay(){
 	D12.style.display = "none";
 }
 function resetColor(){
-	AAll.style.color = "#797777";
 	A1.style.color = "#797777";
 	A2.style.color = "#797777";
 	A3.style.color = "#797777";
@@ -82,13 +78,6 @@ function resetColor(){
 	A10.style.color = "#797777";
 	A11.style.color = "#797777";
 	A12.style.color = "#797777";
-}
-function searchInformationAll(){
-	getId();
-	resetDisplay();
-	DAll.style.display = "block";
-	resetColor();
-	AAll.style.color = "#00aeff";
 }
 function searchInformation1(){
 	getId();

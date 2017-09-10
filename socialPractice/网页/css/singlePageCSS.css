@@ -141,3 +141,32 @@ body{
     margin-right: 52px;
     float: left;
 }
+.policy{
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+    border-radius: 3px;
+    background: #ffffff;
+    box-sizing: border-box;
+	width:960px;
+	margin:20px auto;
+	padding:5px 20px;
+}
+.policy h1{
+	font-size:30px;
+	text-align: center;
+	height:40px;
+	line-height:40px;
+	margin-bottom:24px;
+}
+.policy h2{
+	font-size:20px;
+	font-weight:bold;
+	height:24px;
+	line-height:24px;
+}
+.policy p{
+	font-size:20px;
+	height:24px;
+	line-height:24px;
+	margin-left:10px;
+	margin-bottom:24px;
+}

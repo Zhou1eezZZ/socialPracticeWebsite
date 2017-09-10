@@ -230,6 +230,9 @@ html{
 	overflow:hidden;
 	cursor:pointer;
 }
+.notice ul li a{
+	color:#000000;
+}
 .brief{
 	width:660px;
 	height:270px;
@@ -673,7 +676,7 @@ a.nowPage{
 	float:left;
 	font-size:18px;
 	color:#797777;
-	width:112px;
+	width:130px;
 	height:18px;
 	line-height:18px;
 	text-align:center;
@@ -733,10 +736,10 @@ a.nowPage{
     height: 30px;
 	margin-top:10px;
 }
-.informationDetailsAll{
+.informationDetails1{
 	display: block;
 }
-.informationDetails1,.informationDetails2,.informationDetails3,.informationDetails4,
+.informationDetails2,.informationDetails3,.informationDetails4,
 .informationDetails5,.informationDetails6,.informationDetails7,.informationDetails8,
 .informationDetails9,.informationDetails10,.informationDetails11,.informationDetails12{
 	display: none;
