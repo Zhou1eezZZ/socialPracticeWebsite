@@ -2,15 +2,16 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>桐乡市河道水质</title>
+<title>水质桐乡</title>
 <link href="css/css.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="js/clickEvent.js" charset="utf-8"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
 </head>
 
 <body>
 	<div class="head">
         <div class="headContent">
-        	<h1>桐乡市河道水质</h1>
+        	<h1>水质桐乡</h1>
             <ul>
                 <li><a class="nav nowPage" href="index.html">首页</a></li>
                 <li><a class="nav" href="riverInformation.html">河道信息</a></li>
@@ -25,53 +26,161 @@
     </div>
     <div class="bodyContent">
     	<img class="mainPic" src="images/mainPic.png" />
-        <div class="leftPart">
+		<!--   修改开始-->
+    	<video id="video" controls style="display: none;">
+    		<source src="video/22146818-1.mp4" type="video/mp4">
+    		您的浏览器不支持 video 属性。
+    	</video>
+		<p class="PaP" id="play" onClick="openVideo()">点击查看<br>演示视频</p>
+		<p class="PaP" id="pause" onClick="pauseVideo()" style="display: none;">点击关闭<br>演示视频</p>
+		<!--    	修改结束-->
+    	<div class="top5">
+    		<h1>河道水质红榜</h1>
+    		<ul>
+    			<a href="singlePage/singlePage_DTH.html">
+    				<li>
+						<h2>1</h2>
+						<h3>荡田河</h3>
+						<p>梧桐街道</p>
+						<span class="span_1 board"></span>
+					</li>
+    			</a>
+    			<a href="singlePage/singlePage_DTH.html">
+    				<li>
+						<h2>2</h2>
+						<h3>荡田河</h3>
+						<p>梧桐街道</p>
+						<span class="span_2 board"></span>
+					</li>
+    			</a>
+    			<a href="singlePage/singlePage_DTH.html">
+    				<li>
+						<h2>3</h2>
+						<h3>荡田河</h3>
+						<p>梧桐街道</p>
+						<span class="span_3 board"></span>
+					</li>
+    			</a>
+    			<a href="singlePage/singlePage_DTH.html">
+    				<li>
+						<h2>4</h2>
+						<h3>荡田河</h3>
+						<p>梧桐街道</p>
+						<span class="span_4 board"></span>
+					</li>
+    			</a>
+    			<a href="singlePage/singlePage_DTH.html">
+    				<li>
+						<h2>5</h2>
+						<h3>荡田河</h3>
+						<p>梧桐街道</p>
+						<span class="span_6 board"></span>
+					</li>
+    			</a>
+    		</ul>
+    	</div>
+    	<div class="top5 countBackwards">
+    		<h1>河道水质黑榜</h1>
+    		<ul>
+    			<a href="singlePage/singlePage_DTH.html">
+    				<li>
+						<h2>1</h2>
+						<h3>荡田河</h3>
+						<p>梧桐街道</p>
+						<span class="span_6 board"></span>
+					</li>
+    			</a>
+    			<a href="singlePage/singlePage_DTH.html">
+    				<li>
+						<h2>2</h2>
+						<h3>荡田河</h3>
+						<p>梧桐街道</p>
+						<span class="span_5 board"></span>
+					</li>
+    			</a>
+    			<a href="singlePage/singlePage_DTH.html">
+    				<li>
+						<h2>3</h2>
+						<h3>荡田河</h3>
+						<p>梧桐街道</p>
+						<span class="span_4 board"></span>
+					</li>
+    			</a>
+    			<a href="singlePage/singlePage_DTH.html">
+    				<li>
+						<h2>4</h2>
+						<h3>荡田河</h3>
+						<p>梧桐街道</p>
+						<span class="span_3 board"></span>
+					</li>
+    			</a>
+    			<a href="singlePage/singlePage_DTH.html">
+    				<li>
+						<h2>5</h2>
+						<h3>荡田河</h3>
+						<p>梧桐街道</p>
+						<span class="span_2 board"></span>
+					</li>
+    			</a>
+    		</ul>
+    	</div>
+        <div class="leftTip">
+        	<div class="leftPart">
         	<img class="dutyPic" src="images/dutyPic.png" />
-            <div class="leftArrow"></div>
             <div class="duty">
             	<h1>河长职责</h1>
-<!--               职责修改-->
-                <p>各级河长负责牵头组织开展包干河道水质和污染源现状调查、制订水环境治理实施方案、推动落实重点工程项目、协调解决重点难点问题，做好督促检查，确保完成水环境治理的目标任务。</p>
+                <p>	&nbsp;	&nbsp;	&nbsp;各级河长负责牵头组织开展包干河道水质和污染源现状调查、制订水环境治理实施方案、推动落实重点工程项目、协调解决重点难点问题，做好督促检查，确保完成水环境治理的目标任务。</p>
             </div>
+			</div>
+
+
+			<div class="brief">
+				<img class="briefPic" src="images/briefPic.png" />
+				<h1>网站简介</h1>
+				<p>	&nbsp;	&nbsp;	&nbsp;本网站是关于桐乡市河道水质信息网，涵盖桐乡市100多条河流的水质情况以及数据分析。为桐乡市推进“五水共治”，深化最美乡村建设作出一定的贡献。</p>
+			</div>
         </div>
-        <div class="notice">
-        	<div class="noticeTitle">
-            	<h1>最新公告</h1>
-            	<p>更多</p>
-            </div>
-            <ul>
-<!--            	链接添加-->
-            	<li><a href="全面推行河长制的意见.pdf" target="_blank">[桐乡市]中办国办印发《关于全面推行河长制的意见》 2018年底前全面建立河长制</a></li>
-				<li><a href="基层河长评选.pdf" target="_blank">[桐乡市]《关于开展2016年度首批优秀“基层河长”评选活动的通知》</a></li>
-                <li><a href="关于推进河长履职常态化的通知.pdf" target="_blank">[桐乡市]关于推进河长履职常态化的通知</a></li>
-                <li><a href="关于征集“治水小故事”的通知.pdf" target="_blank">[桐乡市]关于征集“治水小故事”的通知</a></li>        
-            </ul>
+        <div class="warning">
+        	<h1>警示公告</h1>
+			<div class="roller" id="roller">
+				<ul>
+					<li>警示：荡田河区域高锰酸钾含量超标</li>
+					<li>警示：荡田河区域氨氮含量超标</li>
+					<li>警示：荡田河区域总磷含量超标</li>
+					<li>警示：荡田河区域总磷含量超标</li>
+					<li>警示：荡田河区域溶解氧未达标</li>
+					<li>警示：荡田河区域高锰酸钾含量超标圣诞节快乐发哈市交流大会</li>
+					<li>警示：荡田河区域氨氮含量超标</li>
+					<li>警示：荡田河区域总磷含量超标</li>
+					<li>警示：荡田河区域总磷含量超标</li>
+					<li>警示：荡田河区域溶解氧未达标</li>
+					<li>警示：荡田河区域高锰酸钾含量超标</li>
+					<li>警示：荡田河区域氨氮含量超标</li>
+					<li>警示：荡田河区域总磷含量超标</li>
+					<li>警示：荡田河区域总磷含量超标</li>
+					<li>警示：荡田河区域溶解氧未达标</li>
+					<li>警示：荡田河区域高锰酸钾含量超标</li>
+					<li>警示：荡田河区域氨氮含量超标</li>
+					<li>警示：荡田河区域总磷含量超标</li>
+					<li>警示：荡田河区域总磷含量超标</li>
+					<li>警示：荡田河区域溶解氧未达标</li>
+					<li>警示：荡田河区域高锰酸钾含量超标</li>
+					<li>警示：荡田河区域氨氮含量超标</li>
+					<li>警示：荡田河区域总磷含量超标</li>
+					<li>警示：荡田河区域总磷含量超标</li>
+					<li>警示：荡田河区域溶解氧未达标</li>
+					<li>警示：荡田河区域高锰酸钾含量超标</li>
+					<li>警示：荡田河区域氨氮含量超标</li>
+					<li>警示：荡田河区域总磷含量超标</li>
+					<li>警示：荡田河区域总磷含量超标</li>
+					<li>警示：荡田河区域溶解氧未达标</li>
+				</ul>
+			</div>
         </div>
-        <div class="brief">
-        	<h1>网站简介</h1>
-            <img class="briefPic" src="images/briefPic.png" />
-<!--            简介修改-->
-            <p>本网站是关于桐乡市河道水质信息网，涵盖桐乡市100多条河流的水质情况以及数据分析。为桐乡市推进“五水共治”，深化最美乡村建设作出一定的贡献。</p>
-        </div>
-        <div class="notice download">
-        	<div class="noticeTitle">
-            	<h1>文件下载</h1>
-            	<p>更多</p>
-            </div>
-            <ul>
-<!--            	链接添加-->
-            	<li><a href="学唱大禹纪念歌.pdf" target="_blank">学唱大禹纪念歌，传承大禹治水精神，持续推进五水共治工作，力争“大禹杯”。</a></li>
-                <li><a href="关于落实“河长制”工作的通知.pdf" target="_blank">关于落实“河长制”工作的通知</a></li>
-                <li><a href="关于明确“河长制”督查工作具体要求.pdf" target="_blank">关于明确“河长制”督查工作具体要求的通知</a></li>
-            	<li><a href="全面推行河长制的意见.pdf" target="_blank">[桐乡市]中办国办印发《关于全面推行河长制的意见》 2018年底前全面建立河长制</a></li>
-				<li><a href="基层河长评选.pdf" target="_blank">[桐乡市]《关于开展2016年度首批优秀“基层河长”评选活动的通知》</a></li>
-                <li><a href="关于推进河长履职常态化的通知.pdf" target="_blank">[桐乡市]关于推进河长履职常态化的通知</a></li>
-				<li><a href="关于征集“治水小故事”的通知.pdf" target="_blank">[桐乡市]关于征集“治水小故事”的通知</a></li>
-            </ul>
-        </div>
+        
     </div>
     <div class="footer">
-    	<p>桐乡市治水办公室 版权所有</p>
+    	<p>桐乡治水办公室 版权所有</p>
     </div>
     <form name="sign">
     	<div id="floatTop" class="floatTop">
@@ -105,5 +214,51 @@
 			</div>
 		</div>
     </form>
+<script>
+function scrollTxt(){
+    var controls={}, 
+        values={},
+        t1=200, /*播放动画的时间*/
+        t2=2000, /*播放时间间隔*/
+        si;
+    controls.rollWrap=$("#roller");
+    controls.rollWrapUl=controls.rollWrap.children();
+    controls.rollWrapLIs=controls.rollWrapUl.children();
+    values.liNums=controls.rollWrapLIs.length;
+    values.liHeight=controls.rollWrapLIs.eq(0).height();
+    values.ulHeight=controls.rollWrap.height();
+    this.init=function(){
+        autoPlay();
+        pausePlay();
+    }
+    /*滚动*/
+    function play(){
+        controls.rollWrapUl.animate({"margin-top" : "-"+values.liHeight}, t1, function(){
+            $(this).css("margin-top" , "0").children().eq(0).appendTo($(this));
+        });
+    }
+    /*自动滚动*/
+    function autoPlay(){
+        /*如果所有li标签的高度和大于.roll-wrap的高度则滚动*/
+        if(values.liHeight*values.liNums > values.ulHeight){
+            si=setInterval(function(){
+                play();
+            },t2);
+        }
+    }
+    /*鼠标经过ul时暂停滚动*/
+    function pausePlay(){
+        controls.rollWrapUl.on({
+            "mouseenter":function(){
+                clearInterval(si);
+            },
+            "mouseleave":function(){
+                autoPlay();
+            }
+        });
+    }
+}
+new scrollTxt().init();
+</script>
 </body>
 </html>

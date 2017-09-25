@@ -163,3 +163,24 @@ function searchInformation12(){
 	resetColor();
 	A12.style.color = "#00aeff";
 }
+
+//播放点击事件
+function getIdVideo(){
+	var video = document.getElementById("video");
+	var play = document.getElementById("play");
+	var pause = document.getElementById("pause");
+}
+function openVideo(){
+	getIdVideo();
+	video.style.display = "block";
+	play.style.display = "none";
+	pause.style.display = "block";
+	video.play();
+}
+function pauseVideo(){
+	getIdVideo();
+	video.style.display = "none";
+	play.style.display = "block";
+	pause.style.display = "none";
+	video.pause();
+}
